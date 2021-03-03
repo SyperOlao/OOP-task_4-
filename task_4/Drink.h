@@ -4,16 +4,19 @@
 class Drink
 {
 protected:
+	std::string type; 
 	std::string name; 
 	std::string taste;
 	std::string smell;
 	double volume;
 public: 
-	void heatUp(int temperature);
+	virtual void heatUp(int temperature);
 	std::string getName(); 
 	std::string getTaste();
 	std::string getSmell();
+	std::string getType();
 	double getVolume();
+
 
 	void setName(std::string name);
 	void setTaste(std::string taste);

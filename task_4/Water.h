@@ -7,6 +7,7 @@ public:
     Water(std::string name, double volume) : Drink() {
         this->name = name; 
         this->volume = volume; 
+        type = "вода";
     }
 };
 

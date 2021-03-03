@@ -11,6 +11,7 @@ private:
 public:
     BagTea(int gramInBag, std::string name, std::string taste, std::string smell, double volume) : Drink(name, taste, smell, volume) {
         this->gramInBag = gramInBag;
+        this->type = "чай в пакетике";
     }
 
     void setGramInBag(int gramInBag);

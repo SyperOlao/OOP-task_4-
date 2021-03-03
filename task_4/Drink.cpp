@@ -29,6 +29,11 @@ std::string Drink::getSmell()
 	return smell;
 }
 
+std::string Drink::getType()
+{
+	return type;
+}
+
 double Drink::getVolume()
 {
 	return volume;
@@ -56,7 +61,8 @@ void Drink::setVolume(double volume)
 
 Drink::Drink()
 {
-	this->name = "Ќапиток";
+	this->type = "жидкость";
+	this->name = "напиток";
 	this->taste = "отсутвует";
 	this->smell = "отсутвует";
 	this->volume = 0;

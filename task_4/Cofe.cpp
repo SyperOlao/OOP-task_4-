@@ -3,9 +3,9 @@
 void Cofe::heatUp(int temperature)
 {
 	if (temperature < 0) {
-		smell += " уменьшилс€";
-		taste += " со льдом";
-		volume *= 1.1; //∆идкости при замезании увеличивают объем
+		this->smell += " уменьшилс€";
+		this->taste += " со льдом";
+		this->volume *= 1.1; //∆идкости при замезании увеличивают объем
 	}
 	else if (temperature > 60 && temperature < 100) {
 		taste += " гор€чий";

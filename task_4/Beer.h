@@ -6,10 +6,11 @@ class Beer :
 private:
     bool color; //0-темноё, 1-светлое
 public:
-    void heatUp(int temperature);
+    void heatUp(int temperature) override;
     
     Beer(bool color, std::string name, std::string taste, std::string smell, double volume) : Drink(name, taste, smell, volume) {
         this->color = color;
+        type = "пиво";
     }
 };
 
