@@ -11,6 +11,7 @@ protected:
 	double volume;
 public: 
 	virtual void heatUp(int temperature);
+
 	std::string getName(); 
 	std::string getTaste();
 	std::string getSmell();
