@@ -7,8 +7,8 @@ void LeafTea::heatUp(int temperature)
 		volume *= 1.1; //∆идкости при замезании увеличивают объем
 	}
 	else if (temperature > 100) {
-		taste += " гор€чий";
-		smell += " пахнет ещЄ сильнее";
+		taste = " гор€чий";
+		smell = " пахнет ещЄ сильнее";
 		volume *= 0.9; //ѕри нагревании жидкость испар€етс€ 
 	}
 }

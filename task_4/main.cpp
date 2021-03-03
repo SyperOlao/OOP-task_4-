@@ -9,78 +9,44 @@
 #include <list>
 
 void showInfo(Drink* drink); 
-std::list <Drink> inputList();
-void heatAndShow(std::list <Drink> drinks, int temp);
-void inputList2(std::list <Drink>* drinks);
 
 int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     
-    std::list <Drink> drinks = inputList();
-    /*inputList2(&drinks);*/
-
     std::cout << "Напитки:\n" << std::endl;
 
-   /* for (Drink drink : drinks) {
-        showInfo(&drink);
-    }*/
-   
+
     BagTea bagTea(12, "липтон", "черный", "лимон", 350);
     Beer beer(1, "балтика 7", "хмельный", "спирт с хмелем", 500);
     Cofe cofe("черная карта", "кофейный с молоком", "кофейных зерен", 250);
     Water water("святой источник", 500);
     LeafTea leafTea("улун", "черный", "манго", 400);
-    std::cout << "Если нагреть напитки до " << -1 << " градусов:\n" << std::endl;
+    std::cout << "Если охладить напитки до " << -1 << " градусов:\n" << std::endl;
     cofe.heatUp(-1);
+    bagTea.heatUp(-1);
+    beer.heatUp(-1);
+    leafTea.heatUp(-1)
+        ;
+    showInfo(&bagTea);
     showInfo(&cofe);
-    heatAndShow(drinks, -1);
-    //heatAndShow(&drinks, 60);
-    //heatAndShow(&drinks, 110);
+    showInfo(&water);
+    showInfo(&leafTea);
 
- /*   std::cout << "Если нагреть напитки до " << -1 << " градусов:\n" << std::endl;
-    for (Drink &drink : drinks) {
-        drink.heatUp(-1);
-        showInfo(&drink);
-    }*/
-
-  /*  std::cout << "Если нагреть напитки до " << 101 << " градусов:\n" << std::endl;
-    for (Drink drink : drinks) {
-        drink.heatUp(101);
-        showInfo(&drink);
-    }*/
-}
-
-void heatAndShow(std::list <Drink> drinks, int temp) {
-    std::cout << "Если нагреть напитки до "<< temp <<" градусов:\n" << std::endl;
-    for (Drink drink : drinks) {
-        drink.heatUp(temp);
-        showInfo(&drink);
-    }
-}
-
-std::list <Drink> inputList() {
-    std::list <Drink> drinks;
-    drinks.push_back(BagTea(12, "липтон", "черный", "лимон", 350));
-    drinks.push_back(Beer(1, "балтика 7", "хмельный", "спирт с хмелем", 500));
-    drinks.push_back(Cofe("черная карта", "кофейный с молоком", "кофейных зерен", 250));
-    drinks.push_back(Water("святой источник", 500));
-    drinks.push_back(LeafTea("улун", "черный", "манго", 400));
-    return drinks;
-    
-}
-
-void inputList2(std::list <Drink> *drinks) {
-    
-    //drinks->push_back(BagTea(12, "липтон", "черный", "лимон", 350));
-    drinks->push_back(Beer(1, "балтика 7", "хмельный", "спирт с хмелем", 500));
-    drinks->push_back(Cofe("черная карта", "кофейный с молоком", "кофейных зерен", 250));
-   /* drinks->push_back(Water("святой источник", 500));
-    drinks->push_back(LeafTea("улун", "черный", "манго", 400));*/
-   
+    std::cout << "Если нагреть напитки до " << 101 << " градусов:\n" << std::endl;
+    cofe.heatUp(101);
+    bagTea.heatUp(101);
+    beer.heatUp(101);
+    leafTea.heatUp(101)
+        ;
+    showInfo(&bagTea);
+    showInfo(&cofe);
+    showInfo(&water);
+    showInfo(&leafTea);
 
 }
+
 
 void showInfo(Drink* drink) {
     std::cout << "Тип напитка: " << drink->getType() << std::endl
