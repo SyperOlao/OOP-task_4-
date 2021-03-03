@@ -140,18 +140,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BagTea.cpp" />
-    <ClCompile Include="Bear.cpp" />
+    <ClCompile Include="Beer.cpp" />
     <ClCompile Include="Cofe.cpp" />
     <ClCompile Include="Drink.cpp" />
     <ClCompile Include="LeafTea.cpp" />
-    <ClCompile Include="task_4.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Water.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BagTea.h" />
-    <ClInclude Include="Bear.h" />
+    <ClInclude Include="Beer.h" />
     <ClInclude Include="Cofe.h" />
     <ClInclude Include="Drink.h" />
     <ClInclude Include="LeafTea.h" />
+    <ClInclude Include="Water.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

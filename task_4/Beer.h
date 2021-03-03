@@ -1,6 +1,6 @@
 #pragma once
 #include "Drink.h"
-class Bear :
+class Beer :
     public Drink
 {
 private:
@@ -8,7 +8,7 @@ private:
 public:
     void heatUp(int temperature);
     
-    Bear(bool color, std::string name, std::string taste, std::string smell, int volume) : Drink(name, taste, smell, volume) {
+    Beer(bool color, std::string name, std::string taste, std::string smell, double volume) : Drink(name, taste, smell, volume) {
         this->color = color;
     }
 };

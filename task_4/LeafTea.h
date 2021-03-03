@@ -5,5 +5,6 @@ class LeafTea :
 {
 public:
     void heatUp(int temperature);
+    LeafTea(std::string name, std::string taste, std::string smell, double volume) : Drink(name, taste, smell, volume) { }
 };
 

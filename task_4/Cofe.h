@@ -5,5 +5,7 @@ class Cofe :
 {
 public:
     void heatUp(int temperature);
+
+    Cofe(std::string name, std::string taste, std::string smell, double volume) : Drink(name, taste, smell, volume) { }
 };
 

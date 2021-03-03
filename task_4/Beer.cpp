@@ -1,6 +1,6 @@
-#include "Bear.h"
+#include "Beer.h"
 
-void Bear::heatUp(int temperature)
+void Beer::heatUp(int temperature)
 {
 	if (temperature < 0) {
 		taste += " סמ כüהמל";

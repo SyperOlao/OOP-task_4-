@@ -7,21 +7,21 @@ protected:
 	std::string name; 
 	std::string taste;
 	std::string smell;
-	int volume;
+	double volume;
 public: 
 	void heatUp(int temperature);
 	std::string getName(); 
 	std::string getTaste();
 	std::string getSmell();
-	int getVolume();
+	double getVolume();
 
 	void setName(std::string name);
 	void setTaste(std::string taste);
 	void setSmell(std::string smell);
-	void setVolume(int volume);
+	void setVolume(double volume);
 
 	Drink();
 
-	Drink(std::string name, std::string taste, std::string smell, int volume);
+	Drink(std::string name, std::string taste, std::string smell, double volume);
 };
 

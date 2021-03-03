@@ -29,9 +29,9 @@ std::string Drink::getSmell()
 	return smell;
 }
 
-int Drink::getVolume()
+double Drink::getVolume()
 {
-	return 0;
+	return volume;
 }
 
 void Drink::setName(std::string name)
@@ -49,7 +49,7 @@ void Drink::setSmell(std::string smell)
 	this->smell = smell;
 }
 
-void Drink::setVolume(int volume)
+void Drink::setVolume(double volume)
 {
 	this->volume = volume;
 }
@@ -62,7 +62,7 @@ Drink::Drink()
 	this->volume = 0;
 }
 
-Drink::Drink(std::string name, std::string taste, std::string smell, int volume)
+Drink::Drink(std::string name, std::string taste, std::string smell, double volume)
 {
 	this->name = name;
 	this->taste = taste;
